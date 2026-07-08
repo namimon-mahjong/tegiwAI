@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>tegiwAI | レシピを調理の順番にするアプリ</title>
+    <meta
+      name="description"
+      content="tegiwAIは、レシピを工程、調理計画、タイマー、音声ガイドに整理する料理アプリです。"
+    />
+    <meta property="og:title" content="tegiwAI" />
+    <meta
+      property="og:description"
+      content="レシピを入れる。順番が見える。調理中は、今やることだけを見る。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/icon.png" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="masthead">
+      <a class="brand" href="#top" aria-label="tegiwAI home">
+        <img src="assets/favicon.png" alt="" width="36" height="36" />
+        <span>tegiwAI</span>
+      </a>
+      <nav class="nav" aria-label="公開ページ">
+        <a class="nav__link" href="#flow">流れ</a>
+        <a class="nav__link" href="#features">特徴</a>
+        <a class="nav__link" href="privacy-policy.md">個人情報</a>
+        <a class="nav__link" href="terms-of-service.md">規約</a>
+        <a class="nav__link" href="support.md">連絡</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="mono-label">01 / recipe to run sheet</p>
+          <h1 id="hero-title">レシピを入れる。順番が見える。</h1>
+          <p class="hero__lead">
+            tegiwAIは、レシピの文章を調理工程、スケジュール、タイマー、音声ガイドに整理します。台所で迷う時間を減らし、手を動かす順番をはっきりさせるアプリです。
+          </p>
+          <div class="hero__actions" aria-label="ストアリンク">
+            <a class="btn btn--pear" href="https://apps.apple.com/us/app/tegiwai/id6785472294">
+              App Store
+            </a>
+            <a
+              class="btn btn--soft"
+              href="https://play.google.com/store/apps/details?id=com.namimon.tegiwAI&amp;pli=1"
+            >
+              Google Play
+            </a>
+          </div>
+          <p class="release-note">iOS版公開中。Android版は開発中です。</p>
+        </div>
+
+        <div class="hero__artifact" aria-label="tegiwAIの調理計画画面">
+          <figure class="shot shot--large">
+            <img
+              src="assets/ja-iphone-plan.png"
+              alt="tegiwAIの調理計画画面。工程が時間軸に沿って表示されている。"
+              width="390"
+              height="844"
+              fetchpriority="high"
+            />
+          </figure>
+          <div class="cook-mark" aria-hidden="true">
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="flow" class="flow" aria-labelledby="flow-title">
+        <header class="section-head">
+          <p class="mono-label">02 / how it works</p>
+          <h2 id="flow-title">作る前から、作り終わるまで。</h2>
+          <p>
+            一覧、入力、計画、実行。料理中に見る画面を、実際のスクリーンショットで追えるようにしました。
+          </p>
+        </header>
+
+        <article class="stage stage--cyan">
+          <div class="stage__copy">
+            <p class="stage__num">1.0</p>
+            <h3>レシピを選ぶ</h3>
+            <p>
+              よく作る料理を一覧で管理。工程数やタグを見ながら、その日に作るものを先に決められます。
+            </p>
+          </div>
+          <figure class="shot">
+            <img
+              src="assets/ja-iphone-recipes.png"
+              alt="登録済みレシピの一覧画面"
+              width="390"
+              height="844"
+              loading="lazy"
+            />
+          </figure>
+        </article>
+
+        <article class="stage stage--pear">
+          <div class="stage__copy">
+            <p class="stage__num">2.0</p>
+            <h3>文章を工程にする</h3>
+            <p>
+              レシピ本文を材料と手順に整理。外部AIサービスを使う場合も、送る内容を確認してから進めます。
+            </p>
+          </div>
+          <figure class="shot">
+            <img
+              src="assets/ja-iphone-parse.png"
+              alt="レシピ本文を整理する画面"
+              width="390"
+              height="844"
+              loading="lazy"
+            />
+          </figure>
+        </article>
+
+        <article class="stage stage--lav">
+          <div class="stage__copy">
+            <p class="stage__num">3.0</p>
+            <h3>調理計画を見る</h3>
+            <p>
+              加熱、待ち時間、下ごしらえを時間軸に配置。複数品を作るときも、どの作業が重なるかを見渡せます。
+            </p>
+          </div>
+          <figure class="shot">
+            <img
+              src="assets/ja-iphone-plan.png"
+              alt="調理計画の時間軸画面"
+              width="390"
+              height="844"
+              loading="lazy"
+            />
+          </figure>
+        </article>
+
+        <article class="stage stage--coral">
+          <div class="stage__copy">
+            <p class="stage__num">4.0</p>
+            <h3>今やることだけを見る</h3>
+            <p>
+              調理中は現在の工程、残り時間、次の工程を大きく表示。手が離せないときは音声ガイドも使えます。
+            </p>
+          </div>
+          <figure class="shot">
+            <img
+              src="assets/ja-iphone-cook.png"
+              alt="調理中のナビゲーション画面"
+              width="390"
+              height="844"
+              loading="lazy"
+            />
+          </figure>
+        </article>
+      </section>
+
+      <section id="features" class="ledger" aria-labelledby="features-title">
+        <header class="section-head">
+          <p class="mono-label">03 / kitchen ledger</p>
+          <h2 id="features-title">料理中に減らしたい迷い。</h2>
+        </header>
+        <div class="ledger__grid">
+          <article class="ledger__item">
+            <span class="dot dot--pear" aria-hidden="true"></span>
+            <h3>順番を考える</h3>
+            <p>工程を時系列にして、次に何をすればよいかを見失いにくくします。</p>
+          </article>
+          <article class="ledger__item">
+            <span class="dot dot--cyan" aria-hidden="true"></span>
+            <h3>タイマーを探す</h3>
+            <p>調理画面で現在の作業と残り時間を確認できます。</p>
+          </article>
+          <article class="ledger__item">
+            <span class="dot dot--mint" aria-hidden="true"></span>
+            <h3>レシピを読み返す</h3>
+            <p>必要な情報を調理中の表示に寄せ、文章を読む回数を減らします。</p>
+          </article>
+          <article class="ledger__item">
+            <span class="dot dot--lav" aria-hidden="true"></span>
+            <h3>手が離せない</h3>
+            <p>音声ガイドで、画面を触りにくい場面でも次の工程を確認できます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="privacy-note" aria-labelledby="privacy-title">
+        <div class="privacy-note__text">
+          <p class="mono-label">04 / privacy</p>
+          <h2 id="privacy-title">レシピは、基本的に端末内で管理。</h2>
+          <p>
+            アカウント登録なしで利用できます。レシピ、調理計画、設定は、ユーザーが共有や送信を選ばない限り端末内に保存されます。
+          </p>
+        </div>
+        <div class="privacy-note__links" aria-label="関連ドキュメント">
+          <a class="doc-link" href="privacy-policy.md">Privacy Policy</a>
+          <a class="doc-link" href="terms-of-service.md">Terms</a>
+          <a class="doc-link" href="support.md">Support</a>
+        </div>
+      </section>
+
+      <section class="download" aria-labelledby="download-title">
+        <p class="mono-label">05 / start small</p>
+        <h2 id="download-title">まずは一品。段取りを見える形に。</h2>
+        <p>
+          毎日の料理を少し落ち着いて進めるためのアプリです。公開中のiOS版から試せます。
+        </p>
+        <div class="download__actions">
+          <a class="btn btn--pear" href="https://apps.apple.com/us/app/tegiwai/id6785472294">App Store</a>
+          <a
+            class="btn btn--soft"
+            href="https://play.google.com/store/apps/details?id=com.namimon.tegiwAI&amp;pli=1"
+            >Google Play</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a class="brand brand--footer" href="#top">
+          <img src="assets/favicon.png" alt="" width="32" height="32" />
+          <span>tegiwAI</span>
+        </a>
+        <p>Recipe text in. Cooking order out.</p>
+      </div>
+      <nav class="footer__links" aria-label="フッター">
+        <a href="privacy-policy.md">Privacy</a>
+        <a href="terms-of-service.md">Terms</a>
+        <a href="support.md">Support</a>
+        <a href="https://github.com/namimon-mahjong/tegiwAI">GitHub</a>
+      </nav>
+    </footer>
+  </body>
+</html>
